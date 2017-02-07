@@ -1,0 +1,9 @@
+ - alias: doorbell
+    trigger:
+      platform: state
+      entity_id: sensor.frontdoor
+      from: 'noring'
+      to: 'ring'
+    action:
+      service: script.turn_on
+      entity_id: script.doorbell

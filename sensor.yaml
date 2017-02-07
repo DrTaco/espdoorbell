@@ -1,0 +1,5 @@
+sensor:
+  - platform: mqtt
+    name: frontdoor
+    state_topic: "sensor/frontdoor"
+    qos: 0
